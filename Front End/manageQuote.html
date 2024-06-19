@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Manage Quotes</title>
+<link rel="icon" href="res/icon.png">
+<link rel="stylesheet" href="css/quoteCommon.css"/>
+<link rel="stylesheet" href="css/manageQuote.css"/>
+</head>
+<body>
+	
+	<h1 id="title">Manage Quotes</h1>
+	<div id="deleteById" class = "formArea">
+		<h1>Delete by ID</h1>	
+		<label>ID</label>
+		<input id="idInput" type="number" min="0" step="1" />
+		<div id="deleteByIdInnerDiv">
+			<p id="idTopic">&nbsp;</p>
+			<p id="idQuote"></p>
+			<p id="idAuthor"></p>
+		</div>
+		<div class="actionButtonDiv">
+			<button id="deleteQuoteByIdButton" class="secondaryAction">Delete Quote</button>
+			<button id="getQuoteByIdButton" class="action" >Get Quote</button>
+		</div>
+	
+	</div>
+	<div id="updateByDate" class = "formArea">
+		<h1>Update by Date</h1>	
+		<label>Date</label>
+		<select id="dateSelect"></select>
+		<label>Month</label>
+		<select id="monthSelect"></select>
+		<div id="updateByDateInnerDiv" class="formIOArea"> 
+			<label>Topic</label><br/><input id="dateTopic"><br/>
+			<label>Quote</label><br/><textarea id="dateQuote" rows="5" cols="50"></textarea><br/>
+			<label>Author</label><br/><input id="dateAuthor"><br/>
+			<p id="updateByDateResponse"></p>
+		</div>	
+		<div class="actionButtonDiv">
+			<button id="updateQuoteByDateButton" class="secondaryAction" >Update Quote</button>
+			<button id="getQuoteByDateButton" class="action" >Get Quote</button>
+		</div>
+	</div>
+	<div id="addNewQuote" class="formArea">
+		<h1>Add new Quote</h1>	
+		<div id="addNewQuoteInnerDiv" class="formIOArea">
+			<label>Topic</label><br/><input id="addTopic"><br/>
+			<label>Quote</label><br/><textarea id="addQuote" rows="5" cols="50"></textarea><br/>
+			<label>Author</label><br/><input id="addAuthor"><br/>
+			<p id="addNewQuoteResponse"></p>
+		</div>
+		<div class="actionButtonDiv">
+			<button id="clearAddQuoteDataButton" class="action" >Clear</button>
+			<button id="addQuoteButton" class="action" >Add new quote</button>
+		</div>
+
+	</div>
+	<div id = "footer">
+		<div id="footerButtonList">
+			<button id="deleteByIdFooterButton" class="footerButton" >Delete by ID</button> 
+			<button id="updateByDateFooterButton" class="footerButton" >Update by Date</button>
+			<button id="addNewQuoteFooterButton" class="footerButton" >Add new Quote</button>
+		</div>
+	</div>
+	<script src="js/apiCallers.js"></script>
+	<script src="js/uiHelper.js"></script>
+	<script src="js/manageQuotes.js"></script>
+</body>
+</html>

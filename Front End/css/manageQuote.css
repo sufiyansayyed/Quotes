@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+/* h1,label,input,textarea,select,#deleteByIdInnerDiv,.formIOArea{*/
+*{
+	color:#3A4D39; 
+	font-family: "Red Hat Display", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+h1{
+	font-weight: 800;
+	font-size:30px; 
+}
+label,select{
+	margin-right: 10px;
+	font-weight: 500;
+	font-size:22px; 
+}
+input,textarea{
+	font-size:18px; 
+	resize: none;
+}
+.actionButtonDiv{
+	text-align: right;
+}
+.secondaryAction,.action{
+	border: 1px solid #3A4D39;
+	background-color: #FAF8ED;
+	color:#3A4D39; 
+	padding: 8px 20px;
+	margin: 5px 5px;
+	font-family: "Red Hat Display", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 600;
+	transition-duration: 0.2s;
+}
+.secondaryAction:active,.action:active{
+	background-color: #FAF8ED;
+}
+.secondaryAction:hover,.action:hover{
+	box-shadow: rgba(99, 136, 137, 0.5) 0px 7px 29px 0px;
+}
+.secondaryAction:hover{
+	background-color: #D04848;
+}
+.formIOArea{
+	text-align: left;
+	font-weight: 600;
+}
+#idTopic{
+	font-weight: 600;
+	font-size:18px; 
+}
+#idAuthor{
+	text-align: right;
+}
+.formArea{
+	box-shadow: rgba(99, 136, 137, 0.5) 0px 7px 29px 0px;
+	padding: 20px 50px;
+	background-color: #BFD8AF;
+	min-height: 200px;
+	width: fit-content;
+	height: fit-content;
+	line-height: 1.5;
+	vertical-align: middle;
+	position: absolute;
+	left:50%;
+	top:45%;
+	transform: translate(-50%,-50%);
+}
+.secondaryAction{
+	visibility: hidden;
+}
+#updateByDate,#addNewQuote{
+	visibility: hidden;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+body {
+	text-align: center;
+	background-color: #FAF8ED;
+}
+#link,#quote,#title,#author{
+	color:#3A4D39; 
+}
+
+#link,#quote{
+	font-family: "Red Hat Display", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+#title{
+	font-family: "Literata", serif;
+  	font-optical-sizing: auto;
+  	font-weight: 500;
+  	font-style: normal;
+    font-size:60px; 
+	letter-spacing:1px;
+    text-transform: uppercase;
+}
+
+#quote{
+	font-weight: 400;
+	font-size:30px; 
+}
+
+#author{
+	font-family: monospace;
+	font-size:22px; 
+	text-align: right;
+}
+
+#main{
+	box-shadow: rgba(99, 136, 137, 0.5) 0px 7px 29px 0px;
+	padding: 50px 50px;
+	background-color: #BFD8AF;
+	width: fit-content;
+	height: fit-content;
+	line-height: 1.5;
+	vertical-align: middle;
+	position: absolute;
+	left:50%;
+	top:45%;
+	transform: translate(-50%,-50%);
+}
+
+#footer{
+	position:fixed;
+	bottom:40px;
+	display: block;
+	width: 100%;
+}
+
+#footerButtonList{
+	margin-bottom: 10px;
+}
+
+.footerButton{
+	border: 1px solid #3A4D39;
+	background-color: #BFD8AF;
+	color:#3A4D39; 
+	padding: 8px 20px;
+	margin: 5px 5px;
+	font-family: "Red Hat Display", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-weight: 600;
+	transition-duration: 0.2s;
+}
+
+.footerButton:hover{
+	box-shadow: rgba(99, 136, 137, 0.5) 0px 7px 29px 0px;
+}
+
+/* .footerButton:active{
+	background-color: #FAF8ED;
+} */
