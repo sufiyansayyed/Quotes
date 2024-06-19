@@ -12,7 +12,7 @@ Quotes is a simple three tier application which displays... well "Quotes" from f
 ## How to install and run the project
 1 - Clone the repository  
 2 - Create Database using `Table_and_DB_creation_DDL.sql` present in helper folder  
-3 - Create Table using `Table_and_DB_creation_DDL.sql`, Make sure to craete table in correct Database  
+3 - Create Table using `Table_and_DB_creation_DDL.sql`, Make sure to create table in correct Database  
 4 - Update `db_conn_details.py` with appropriate database connection details  
 5 - Load the data in database using `db_loader.py`  
 6 - Open the Java Project in any IDE  
